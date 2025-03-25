@@ -20,7 +20,7 @@ provider "azurerm" {
 }
 
 data "azurerm_resource_group" "example" {
-    name     = "terraform-jenkins"
+    name     = "terraform-jenkins-new"
 }
 
 resource "azurerm_virtual_network" "example" {
