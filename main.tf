@@ -12,9 +12,8 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = "example-resources"
-  location = "East US"
+data "azurerm_resource_group" "example" {
+    name     = "terraform-jenkins"
 }
 
 resource "azurerm_virtual_network" "example" {
