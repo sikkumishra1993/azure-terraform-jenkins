@@ -10,7 +10,7 @@ backend "azurerm" {
     resource_group_name  = "terraform-jenkins"
     storage_account_name = "smiterraformjenkins"
     container_name       = "tfstate"
-    key                  = "${terraform.workspace}/terraform.tfstate"
+    key                  = "terraform.tfstate"
   }
   required_version = ">= 1.0.0"
 }
